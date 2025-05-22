@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="1" errors="0" time="2.875">
+  <testsuite name="CREATE TOUR" errors="0" failures="1" skipped="0" timestamp="2025-05-22T10:13:29" time="2.65" tests="1">
+    <testcase classname="CREATE TOUR create tour" name="CREATE TOUR create tour" time="1.099">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;201&quot;
+Received: 201
+    at /Users/vladimirsorokoletov/Desktop/Lecture/apiAutomation/src/tests/tour/create_tour_positive.spec.ts:37:36
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
