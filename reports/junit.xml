@@ -1,13 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="1" errors="0" time="3.116">
-  <testsuite name="CREATE TOUR" errors="0" failures="1" skipped="0" timestamp="2025-05-22T10:35:16" time="2.885" tests="1">
-    <testcase classname="CREATE TOUR create tour" name="CREATE TOUR create tour" time="1.256">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
 
-Expected: &quot;201&quot;
-Received: 201
-    at /Users/vladimirsorokoletov/Desktop/Lecture/apiAutomation/src/tests/tour/create_tour_positive.spec.ts:37:36
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+
+<testsuites name="jest tests" tests="13" failures="0" errors="0" time="3.73">
+  <testsuite name="USER SIGN UP" errors="0" failures="0" skipped="0" timestamp="2025-05-15T13:40:04" time="3.548" tests="13">
+    <testcase classname="USER SIGN UP POSITIVE TESTING with async/await should sign up a new user" name="USER SIGN UP POSITIVE TESTING with async/await should sign up a new user" time="0.518">
     </testcase>
-  </testsuite>
-</testsuites>
+    <testcase classname="USER SIGN UP POSITIVE TESTING with .then should sign up a new user" name="USER SIGN UP POSITIVE TESTING with .then should sign up a new user" time="0.454">
+    </testcase>
+    <testcase classname="USER SIGN UP POSITIVE TESTING with .end() and done() should sign up a new user" name="USER SIGN UP POSITIVE TESTING with .end() and done() should sign up a new user" time="0.46">
+    </testcase>
+    <testcase classname="USER SIGN UP NEGATIVE TESTING should return 400 if required fields are missing (done)" name="USER SIGN UP NEGATIVE TESTING should return 400 if required fields are missing (done)" time="0.023">
+    </testcase>
+    <testcase classname="USER SIGN UP NEGATIVE TESTING should return 400 if the name field is missing (.end())" name="USER SIGN UP NEGATIVE TESTING should return 400 if the name field is missing (.end())" time="0.003">
+    </testcase>
+    <testcase classname="USER SIGN UP NEGATIVE TESTING should return 400 if the email field is missing (.end())" name="USER SIGN UP NEGATIVE TESTING should return 400 if the email field is missing (.end())" time="0.002">
+    </testcase>
+    <testcase classname="USER SIGN UP NEGATIVE TESTING should return 400 if the password field is missing (.end())" name="USER SIGN UP NEGATIVE TESTING should return 400 if the password field is missing (.end())" time="0.003">
+    </testcase>
+    <testcase classname="USER SIGN UP NEGATIVE TESTING should return 400 if the passwordConfirm field is missing (.end())" name="USER SIGN UP NEGATIVE TESTING should return 400 if the passwordConfirm field is missing (.end())" time="0.003">
+    </testcase>
+    <testcase classname="USER SIGN UP NEGATIVE TESTING should return 400 if multiple fields are missing (.end())" name="USER SIGN UP NEGATIVE TESTING should return 400 if multiple fields are missing (.end())" time="0.005">
+    </testcase>
+    <testcase classname="USER SIGN UP NEGATIVE TESTING should not create a new user with an already used email (.then())" name="USER SIGN UP NEGATIVE TESTING should not create a new user with an already used email (.then())" time="1.022">
+    </testcase>
+    <testcase classname="USER SIGN UP NEGATIVE TESTING should return 400 if password and passwordConfirm do not match (done)" name="USER SIGN UP NEGATIVE TESTING should return 400 if password and passwordConfirm do not match (done)" time="0.01">
+    </testcase>
+    <testcase classname="USER SIGN UP NEGATIVE TESTING should return 400 if email is invalid (.end())" name="USER SIGN UP NEGATIVE TESTING should return 400 if email is invalid (.end())" time="0.005">
+    </testcase>
+    <testcase classname="USER SIGN UP NEGATIVE TESTING should return 400 if the password is too long (.then())" name="USER SIGN UP NEGATIVE TESTING should return 400 if the password is too long (.then())" time="0.004">

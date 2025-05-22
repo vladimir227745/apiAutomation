@@ -1,3 +1,4 @@
+
 import { getUser, signUp } from '../../../helper/user';
 
 let cookie: string;
@@ -38,4 +39,5 @@ describe('CREATE TOUR', () => {
         expect(tourRes.body.data.difficulty).toBe('easy');
       });
   });
+
 });

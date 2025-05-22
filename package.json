@@ -15,8 +15,15 @@
     "@types/supertest": "^6.0.3",
     "jest": "^29.7.0",
     "jest-html-reporter": "^4.1.0",
+<<<<<<< HEAD
     "jest-junit": "^16.0.0",
     "supertest": "^7.1.1",
+=======
+    "supertest": "^7.1.0",
+>>>>>>> 034442b02ac8694a86ea80b342fdd22147cb45fa
     "ts-jest": "^29.3.2"
+  },
+  "dependencies": {
+    "jest-junit": "^16.0.0"
   }
 }
